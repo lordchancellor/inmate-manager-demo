@@ -10,6 +10,10 @@ import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BugReportComponent } from './bug-report/bug-report.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BookingComponent } from './booking/booking.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -17,16 +21,18 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     LeftNavComponent,
     InmatesListComponent,
     BugReportComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [{ provide: MAT_DATE_LOCALE, useValue: 'en-GB' }, { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 2500 } }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

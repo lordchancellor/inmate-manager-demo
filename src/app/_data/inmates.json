@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "id": 1,
+      "id": "1",
       "reference": "I00000082",
       "firstName": "Barry",
       "surname": "Allen",
@@ -9,7 +9,7 @@
       "dob": "1956-10-09"
     },
     {
-      "id": 2,
+      "id": "2",
       "reference": "I00000084",
       "firstName": "Oliver",
       "surname": "Queen",
@@ -17,7 +17,7 @@
       "dob": "1941-11-15"
     },
     {
-      "id": 3,
+      "id": "3",
       "reference": "I00000012",
       "firstName": "Ray",
       "surname": "Palmer",
@@ -25,7 +25,7 @@
       "dob": "1961-10-02"
     },
     {
-      "id": 4,
+      "id": "4",
       "reference": "I00000018",
       "firstName": "Peter",
       "surname": "Parker",
@@ -33,7 +33,7 @@
       "dob": "1962-08-23"
     },
     {
-      "id": 5,
+      "id": "5",
       "reference": "I00000011",
       "firstName": "Hal",
       "surname": "Jordan",
@@ -41,7 +41,7 @@
       "dob": "1959-10-21"
     },
     {
-      "id": 6,
+      "id": "6",
       "reference": "I00000006",
       "firstName": "John",
       "surname": "Constantine",

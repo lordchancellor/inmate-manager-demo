@@ -8,6 +8,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 const materialModules: any[] = [
   MatToolbarModule,
@@ -18,7 +23,12 @@ const materialModules: any[] = [
   MatCardModule,
   MatTableModule,
   MatSortModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  MatInputModule,
+  MatDatepickerModule,
+  MatFormFieldModule,
+  MatNativeDateModule,
+  MatSnackBarModule
 ]
 
 @NgModule({

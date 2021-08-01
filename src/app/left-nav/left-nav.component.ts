@@ -22,6 +22,7 @@ export class LeftNavComponent implements OnInit {
   private getMenuItems(): MenuItem[] {
     return [
       { label: 'Inmates', route: ['/'], icon: 'list', },
+      { label: 'Booking', route: ['booking'], icon: 'login' },
       { label: 'Bug Report', route: ['bug-report'], icon: 'bug_report' }
     ]
   }

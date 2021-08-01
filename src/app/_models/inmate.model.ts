@@ -1,6 +1,8 @@
 export interface Inmate {
-  id: number;
-  referenceNumber: string;
+  id: string | null;
+  referenceNumber: string | null;
   name: string;
   arrivalDate: string;
+  arrivalTime: string;
+  dob: string;
 }
