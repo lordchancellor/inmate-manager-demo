@@ -46,9 +46,6 @@
       <mat-error *ngIf="bookingForm.get('arrivalTime')?.hasError('required') && submitted">
         Arrival time is <strong>required</strong>
       </mat-error>
-      <mat-error *ngIf="bookingForm.get('arrivalTime')?.hasError('pattern')">
-        Arrival time is should be in the format <strong>hh:mm</strong>
-      </mat-error>
     </mat-form-field>
   </form>
 

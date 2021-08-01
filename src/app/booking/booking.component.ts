@@ -34,7 +34,7 @@ export class BookingComponent implements OnInit {
       surname: [null, Validators.required],
       dob: [null, Validators.required],
       arrivalDate: [null, Validators.required],
-      arrivalTime: [null, Validators.compose([Validators.required, Validators.pattern(timeRegex)])]
+      arrivalTime: [null, Validators.required]
     })
   }
 

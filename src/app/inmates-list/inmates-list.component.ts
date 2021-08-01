@@ -13,7 +13,7 @@ import { MatSort } from '@angular/material/sort';
     class: 'full-width'
   }
 })
-export class InmatesListComponent implements OnInit, AfterViewInit {
+export class InmatesListComponent implements OnInit {
 
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -25,14 +25,7 @@ export class InmatesListComponent implements OnInit, AfterViewInit {
   constructor(private inmateService: InmateService) { }
 
   public ngOnInit(): void {
-    this.dataSource = new MatTableDataSource<Inmate>(this.inmates);
-
     this.loadInmates();
-  }
-
-  public ngAfterViewInit(): void {
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
   }
 
   /**
@@ -43,6 +36,8 @@ export class InmatesListComponent implements OnInit, AfterViewInit {
       (inmates: Inmate[]) => {
         this.inmates = [...inmates];
         this.dataSource = new MatTableDataSource<Inmate>(this.inmates);
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
       },
       (err: any) => {
         console.error(err);
